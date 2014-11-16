@@ -1,0 +1,18 @@
+apply plugin: 'war'
+apply plugin: 'eclipse-wtp'
+apply plugin: 'eclipse'
+
+ext {
+	seleniumVersion = "2.40.0"
+}
+
+repositories {
+   mavenCentral()
+}
+
+dependencies {
+   //FileUtils
+   compile group: 'org.apache.commons', name: 'commons-io', version: '1.3.2'
+}
+
+            
